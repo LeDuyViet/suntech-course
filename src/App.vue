@@ -1,30 +1,42 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="app">
+    <nav>
+      <sidebar class="sidebar" />
+    </nav>
+    <main>
+      <router-view />
+    </main>
   </div>
-  <router-view />
 </template>
 
+<script>
+import sidebar from "./components/sidebar.vue";
+export default {
+  components: {
+    sidebar,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.app {
+  display: flex;
+}
+main {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+}
+h1 {
+  margin-top: 0;
+  background-color: #e2111134;
+  height: 100%;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(141, 56, 56);
 }
 </style>
