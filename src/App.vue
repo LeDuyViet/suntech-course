@@ -32,11 +32,11 @@ main {
 }
 h1 {
   margin-top: 0;
-  background-color: #e2111134;
+  background-color: #457b9d;
   height: 100%;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
-  color: rgb(141, 56, 56);
+  color: #fff;
 }
 </style>

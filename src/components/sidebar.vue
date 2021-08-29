@@ -31,8 +31,15 @@ export default {
   background-color: #e0fbfc;
   border-radius: 5px;
 }
-.el-menu * {
-  color: #3d405b;
-
+.el-menu-item * {
+  color: #000000;
+  font-weight: 900;
+}
+.el-menu-item:hover {
+  background-color: #457b9d;
+  border-radius: 5px;
+}
+.el-menu-item:hover * {
+  color: #fff;
 }
 </style>

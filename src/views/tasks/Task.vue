@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Task management</h1>
+        <h1>Task Management</h1>
     </div>
 </template>
 
